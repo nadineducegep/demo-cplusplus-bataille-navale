@@ -32,5 +32,15 @@ int main()
 	aTouteVoile.avancer(2,3);
 	cout << "Mon Voilier est rendu a (" << aTouteVoile.getPositionX() << "," << aTouteVoile.getPositionY() << ")" << endl;
 
+	// Faire des tableaux d'objets - non recommande
+	Bateau quai[5];
+	quai[0] = monBateau;
+	quai[1] = aTouteVoile; // cast implicite // mauvais
+
+	// Faire des tableaux de pointeurs - methode recommandee
+	Bateau* marina[5]; // Bateau* type pointeur
+	marina[0] = &monBateau; // Operateur & en tant que preneur d'adresse de variable
+	marina[1] = &aTouteVoile; // l'objet conserve son type, sa taille
+
 	return 0;
 }
