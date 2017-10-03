@@ -21,5 +21,10 @@ int main()
 	string penseeDuJour = "Toutes les maladies ne se soignent pas dans la pharmacie";
 	cout << "Pensée du jour : " << penseeDuJour << endl;
 
+	Bateau * monBateauPointe = new Bateau(); // objet instancié dans la heap
+
+	Bateau monBateau; // objet instancié dans la stack
+	monBateau.avancer(3,4);
+
 	return 0;
 }
