@@ -8,6 +8,7 @@
 
 #include <iostream>
 #include "Bateau.h"
+#include "Voilier.h"
 using namespace std;
 
 int main()
@@ -25,7 +26,11 @@ int main()
 
 	Bateau monBateau; // objet instancié dans la stack
 	monBateau.avancer(3,4);
-	cout << "Mon bateau est rendu a (" << monBateau.getPositionX() << "," << monBateau.getPositionY() << ")";
+	cout << "Mon bateau est rendu a (" << monBateau.getPositionX() << "," << monBateau.getPositionY() << ")" << endl;
+
+	Voilier aTouteVoile;
+	aTouteVoile.avancer(2,3);
+	cout << "Mon Voilier est rendu a (" << aTouteVoile.getPositionX() << "," << aTouteVoile.getPositionY() << ")" << endl;
 
 	return 0;
 }
