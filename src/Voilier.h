@@ -19,6 +19,30 @@ protected:
 public:
 	Voilier();
 	virtual ~Voilier();
+
+	int getNombreVoiles() const {
+		return nombreVoiles;
+	}
+
+	void setNombreVoiles(int nombreVoiles) {
+		this->nombreVoiles = nombreVoiles;
+	}
+
+	bool isOuvertureVoile() const {
+		return ouvertureVoile;
+	}
+
+	void setOuvertureVoile(bool ouvertureVoile) {
+		this->ouvertureVoile = ouvertureVoile;
+	}
+
+	bool isPresenceMoteur() const {
+		return presenceMoteur;
+	}
+
+	void setPresenceMoteur(bool presenceMoteur) {
+		this->presenceMoteur = presenceMoteur;
+	}
 };
 
 #endif /* VOILIER_H_ */
