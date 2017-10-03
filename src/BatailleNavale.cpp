@@ -25,6 +25,7 @@ int main()
 
 	Bateau monBateau; // objet instancié dans la stack
 	monBateau.avancer(3,4);
+	cout << "Mon bateau est rendu a (" << monBateau.getPositionX() << "," << monBateau.getPositionY() << ")";
 
 	return 0;
 }

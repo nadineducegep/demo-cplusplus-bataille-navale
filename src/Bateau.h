@@ -25,6 +25,31 @@ public:
 
 	void avancer(int deltaX, int deltaY);
 
+
+
+	const string& getNom() const {
+		return nom;
+	}
+
+	void setNom(const string& nom) {
+		this->nom = nom;
+	}
+
+	float getPositionX() const {
+		return positionX;
+	}
+
+	void setPositionX(float positionX) {
+		this->positionX = positionX;
+	}
+
+	float getPositionY() const {
+		return positionY;
+	}
+
+	void setPositionY(float positionY) {
+		this->positionY = positionY;
+	}
 };
 
 #endif /* BATEAU_H_ */
