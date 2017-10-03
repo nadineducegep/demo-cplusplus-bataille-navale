@@ -7,9 +7,19 @@
 //============================================================================
 
 #include <iostream>
+#include "Bateau.h"
 using namespace std;
 
-int main() {
+int main()
+{
 	cout << "!!! Je vous répondrai par la bouche de mes canons !!!" << endl; // prints !!! Je vous répondrai par la bouche de mes canons !!!
+	//cerr << "Voici un message d'erreur";
+
+	int quantite = 0;
+	float vitesse = 0.0;
+
+	string penseeDuJour = "Toutes les maladies ne se soignent pas dans la pharmacie";
+	cout << "Pensée du jour : " << penseeDuJour << endl;
+
 	return 0;
 }
