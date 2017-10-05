@@ -44,7 +44,11 @@ int main()
 
 	Capitaine capitaineNadine;
 	capitaineNadine.setNom("Nadine");
-	aTouteVoile.attribuerCapitaine(capitaineNadine);
+	//aTouteVoile.attribuerCapitaine(capitaineNadine); // copie d'objet
+	aTouteVoile.attribuerCapitaine(new Capitaine()); // passage de pointeur d'objet anonyme
+	aTouteVoile.attribuerCapitaine(&capitaineNadine); // passage de pointeur d'objet nommé
+
+
 
 
 	return 0;

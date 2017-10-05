@@ -16,7 +16,8 @@ using namespace std;
 class Bateau {
 protected:
 
-	Capitaine capitaine;
+	//Capitaine capitaine; // entraine les copies d'objet
+	Capitaine* capitaine;
 	string nom;
 	float positionX;
 	float positionY;
@@ -27,7 +28,8 @@ public:
 
 	void avancer(int deltaX, int deltaY);
 
-	void attribuerCapitaine(Capitaine capitaine);
+	//void attribuerCapitaine(Capitaine capitaine); // copie d'objet - pas tres optimal
+	void attribuerCapitaine(Capitaine* capitaine); // passage de pointeur - juste 4 octests
 
 	const string& getNom() const {
 		return nom;

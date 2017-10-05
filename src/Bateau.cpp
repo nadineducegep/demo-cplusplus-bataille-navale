@@ -17,10 +17,17 @@ Bateau::~Bateau()
 {
 }
 
-void Bateau::attribuerCapitaine(Capitaine capitaine)
+// Version avec copie d'objet
+//void Bateau::attribuerCapitaine(Capitaine capitaine)
+//{
+//	this->capitaine = capitaine; // copie d'objet
+//	cout << "Nouveau capitaine pour Bateau " << this->nom << " : " << this->capitaine.getNom() << endl;
+//}
+
+void Bateau::attribuerCapitaine(Capitaine* capitaine)
 {
-	this->capitaine = capitaine; // copie d'objet
-	cout << "Nouveau capitaine pour Bateau " << this->nom << " : " << this->capitaine.getNom();
+	this->capitaine = capitaine;
+	cout << "Nouveau capitaine pour Bateau " << this->nom << " : " << (*this->capitaine).getNom() << endl;
 }
 
 
