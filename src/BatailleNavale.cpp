@@ -42,5 +42,10 @@ int main()
 	marina[0] = &monBateau; // Operateur & en tant que preneur d'adresse de variable
 	marina[1] = &aTouteVoile; // l'objet conserve son type, sa taille
 
+	Capitaine capitaineNadine;
+	capitaineNadine.setNom("Nadine");
+	aTouteVoile.attribuerCapitaine(capitaineNadine);
+
+
 	return 0;
 }

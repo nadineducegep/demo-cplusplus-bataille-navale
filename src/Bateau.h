@@ -11,10 +11,12 @@ using namespace std;
 
 #ifndef BATEAU_H_
 #define BATEAU_H_
+#include "Capitaine.h"
 
 class Bateau {
 protected:
 
+	Capitaine capitaine;
 	string nom;
 	float positionX;
 	float positionY;
@@ -25,7 +27,7 @@ public:
 
 	void avancer(int deltaX, int deltaY);
 
-
+	void attribuerCapitaine(Capitaine capitaine);
 
 	const string& getNom() const {
 		return nom;
@@ -50,6 +52,7 @@ public:
 	void setPositionY(float positionY) {
 		this->positionY = positionY;
 	}
+
 };
 
 #endif /* BATEAU_H_ */

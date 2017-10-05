@@ -17,6 +17,13 @@ Bateau::~Bateau()
 {
 }
 
+void Bateau::attribuerCapitaine(Capitaine capitaine)
+{
+	this->capitaine = capitaine; // copie d'objet
+	cout << "Nouveau capitaine pour Bateau " << this->nom << " : " << this->capitaine.getNom();
+}
+
+
 void Bateau::avancer(int deltaX, int deltaY)
 {
 	this->positionX += deltaX;
